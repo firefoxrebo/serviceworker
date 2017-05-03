@@ -42,7 +42,7 @@ fetchUsers().then(function(response)
 	{
 		var results = r.results;
 		results.forEach(function(element) {
-			console.log(element.name.title + ' ' + element.name.first + ' ' + element.name.last);
+			document.write('<p>' + element.name.title + ' ' + element.name.first + ' ' + element.name.last + '</p>');
 		}, this);
 	});
 }, function(error)
